@@ -9,7 +9,13 @@
 body{
     font-family: 'Montserrat', sans-serif;
 }
-
+a{
+    text-decoration: none;
+    color: gray;
+    width: 100%;
+    height: 100%;
+    display: inline-block;
+}
 
 /* VARIABLES */
 :root{
@@ -28,12 +34,12 @@ body{
 /* MAIN */
 main{
     width: 100%;
-    height: calc(100vh - 100px);
+    height: calc(100vh - 70px);
     display: flex;
 }
 
 /* NAV */
-nav{
+#side-nav{
     width: 250px;
     height: 100%;
     background-color: pink;
@@ -68,13 +74,7 @@ nav{
     border: 1px solid blue;
     margin: 10px 0;
 }
-#nav-ul ul li a{
-    text-decoration: none;
-    color: gray;
-    width: 100%;
-    height: 100%;
-    display: inline-block;
-}
+
 #nav-footer{
     width: 100%;
     height: 80px;
@@ -105,9 +105,29 @@ nav{
 /* FOOTER */
 footer{
     width: 100%;
-    height: 100px;
+    height: 70px;
     background-color: lightblue;
     overflow-y: hidden; 
+    padding: 0 5px;
+    display: flex;
+    justify-content: space-between;
+}
+#footer-content-left{
+    border: 1px solid red;
+    height: 100%;
+    width: 250px;
+}
+
+#footer-content-center{
+    border: 1px solid red;
+    height: 100%;
+    width: 500px;
+}
+
+#footer-content-right{
+    border: 1px solid red;
+    height: 100%;
+    width: 300px;
 }
 
 /* UPGRADE-BANNER */
@@ -115,8 +135,20 @@ footer{
     background-color: rgba(0, 0, 0, 0.5);
     color: white;
     width: calc(100% - 250px);
-    font-size: 20px;
     position: fixed;
     top: 0;
     right: 0;
+    padding: 20px 10px;
+    display: flex;
+    justify-content: flex-end;
+}
+#upgrade-button{
+    width: max-content;
+    border: 2px solid white;
+    font-size: 12px;
+    border-radius: 25px;
+}
+#upgrade-link{
+    padding: 8px 20px;
+    color: white;
 }
