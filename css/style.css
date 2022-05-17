@@ -19,6 +19,18 @@ a{
 ul{
     list-style-type: none;
 }
+h2{
+    margin: 10px 0; 
+    color: white;
+}
+h3{
+    margin: 7px 0 5px;
+    color: white;
+}
+h5{
+    margin: 13px 0;
+    color: gray;
+}
 
 /* VARIABLES */
 :root{
@@ -59,13 +71,33 @@ main{
     padding: 10px 0;
 }
 #logo img{
-    width: 100%;
+    width: 65%;
 }
-
-#nav-ul{
-    width: 100%;
+.img-nav-link{
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+}
+.nav-link li{
+    margin-bottom: 5px;
+}
+.nav-link a{
+    display: inline;
+}
+.nav-playlist{
+    background-color: green;
+    flex-grow: 1;
+}
+.nav-playlist ul{
+    background-color: blue;
+}
+#nav-footer{
+    background-color: chocolate;
+}
+/* #nav-ul{
+    width: 100%; */
     /* height: 90px; */
-    border: 1px solid red;
+    /* border: 1px solid red;
 }
 #nav-ul ul li{
     width: 100%;
@@ -73,9 +105,9 @@ main{
     border: 1px solid blue;
 }
 .nav-ul-playlist{
-    background-color: orange;
+    background-color: orange; */
     /* height: calc(100% - 60px - 80px - 90px); */
-    flex-grow: 1;
+    /* flex-grow: 1;
 }
 #nav-ul h4{
     border: 1px solid blue;
@@ -83,9 +115,9 @@ main{
 }
 
 #nav-footer{
-    width: 100%;
+    width: 100%; */
     /* height: 80px; */
-    border: 1px solid red;
+    /* border: 1px solid red;
     position: relative;
     background-color: blueviolet;
 }
@@ -99,18 +131,19 @@ main{
 #nav-footer-top{
     position: absolute;
     bottom: 20px
-}
+} */
+
 
 /* CONTENT */
 .content{
     height: 100%;
     width: calc(100% - 250px);
-    background-color: lightgreen;
+    background-color: #141922;
     overflow-y: auto;
     padding-top: 80px;
 }
 nav{
-    border: 1px solid red;
+    
     width: 100%;
     height: 40px;
     display: flex;
@@ -119,15 +152,20 @@ nav{
 nav ul{
     display: flex;
     font-size: 11.5px;
-    border: 1px solid blue;
 }
 nav ul li{
-    border: 1px solid blue;
     margin: 0 10px;
     line-height: 35px;
+    font-weight: 900;
 }
+#selected-content{
+    padding-bottom: 0;
+    border-bottom: 2px solid lime;
+    /* width: 50px; */
+}
+
 .row{
-    border: 1px solid red;
+    
     width: 100%;
     /* height: 250px; */
     padding: 0 20px;
@@ -138,7 +176,7 @@ nav ul li{
     /* justify-content: space-between; */
 }
 .card{
-    border: 1px solid red;
+    
     width: calc(94% / 6);
     /* height: 80%; */
     margin: 10px 0;
@@ -224,6 +262,7 @@ figure img{
 }
 #footer-content-center-top{
     height: 50%;
+    padding-top: 10px;
 }
 
 #footer-content-center-bottom{
