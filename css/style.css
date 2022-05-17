@@ -32,6 +32,8 @@ h5{
     color: gray;
 }
 
+
+
 /* VARIABLES */
 :root{
     --primary-color: ;
@@ -57,17 +59,21 @@ main{
 #side-nav{
     width: 250px;
     height: 100%;
-    background-color: pink;
+    background-color: #000;
     overflow-y: hidden; 
     padding-left: 10px;
     display: flex;
     flex-direction: column;
+    color: gray;
 }
-
+#side-nav a{
+    color: gray;
+}
+#side-nav #wh{
+    color: white;
+}
 #logo{
     width: 100%;
-    /* height: 60px; */
-    border: 1px solid red;
     padding: 10px 0;
 }
 #logo img{
@@ -84,55 +90,77 @@ main{
 .nav-link a{
     display: inline;
 }
+#selected-link{
+    border-left: 2px solid lime;
+}
 .nav-playlist{
-    background-color: green;
     flex-grow: 1;
 }
-.nav-playlist ul{
-    background-color: blue;
+.nav-playlist h3{
+    font-size: 13px;
 }
-#nav-footer{
-    background-color: chocolate;
-}
-/* #nav-ul{
-    width: 100%; */
-    /* height: 90px; */
-    /* border: 1px solid red;
-}
-#nav-ul ul li{
+#crea-playlist{
     width: 100%;
-    height: 30px;
-    border: 1px solid blue;
 }
-.nav-ul-playlist{
-    background-color: orange; */
-    /* height: calc(100% - 60px - 80px - 90px); */
-    /* flex-grow: 1;
+.crea-playlist-top{
+    display: flex;
+    align-items: center;
 }
-#nav-ul h4{
-    border: 1px solid blue;
+.crea-playlist-top span{
+    font-size: 12px;
+}
+#playlist-plus{
+    width: 35px;
+    height: 35px;
+    background-color: #a2a2a2;
+    font-size: 35px;
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10px;
+}
+.nav-playlist ul li{
     margin: 10px 0;
+    font-size: 12px;
 }
-
-#nav-footer{
-    width: 100%; */
-    /* height: 80px; */
-    /* border: 1px solid red;
-    position: relative;
-    background-color: blueviolet;
-}
-#nav-footer-bottom{
-    position: absolute;
-    bottom: 0;
+#nav-footer-container{
     width: 90%;
-    border-top: 1px solid black;
     margin: 0 auto;
 }
-#nav-footer-top{
-    position: absolute;
-    bottom: 20px
-} */
-
+#nav-footer-top span{
+    font-size: 12px;
+    vertical-align: middle;
+}
+#nav-footer-top img{
+    width: 15px;
+    margin-right: 5px;
+    vertical-align: middle;
+}
+hr{
+    margin: 10px 0;
+}
+#nav-footer-bottom{
+    display: inline-block;
+    margin-bottom: 5px;
+}
+#nav-footer-bottom span{
+    font-size: 14px;
+    vertical-align: middle;
+    color: white;
+}
+#nav-footer-bottom-img{
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: #808080;
+    display: inline-block;
+    overflow: hidden;
+    vertical-align: middle;
+}
+#nav-footer-bottom-img img{
+    width: 100%;
+}
 
 /* CONTENT */
 .content{
@@ -161,7 +189,8 @@ nav ul li{
 #selected-content{
     padding-bottom: 0;
     border-bottom: 2px solid lime;
-    /* width: 50px; */
+    /* width: 50px;
+    margin: 0 auto; */
 }
 
 .row{
