@@ -160,10 +160,32 @@ footer{
     display: flex;
     justify-content: space-between;
 }
+
 #footer-content-left{
     border: 1px solid red;
     height: 100%;
     width: 250px;
+    padding: 15px 10px;
+    display: flex;
+    font-size: 13px;
+    color: white;
+    align-items: center;
+}
+figure{
+    width: 40px;
+    height: 40px;
+    background-color: red;
+    margin-right: 10px;
+}
+#footer-content-left p{
+    margin-right: 50px;
+}
+#footer-content-left span{
+    font-size: 10px;
+    color: gray
+}
+#footer-content-left-icon i{
+    margin-right: 4px;
 }
 
 #footer-content-center{
@@ -171,11 +193,73 @@ footer{
     height: 100%;
     width: 500px;
 }
+#footer-content-center-top{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.footer-content-center-top-icon{
+    width: 40px;
+}
+.footer-content-center-top-icon a{
+    color: white;
+}
+#play-button{
+    font-size: 30px;
+    margin: 0 auto;
+}
+#footer-content-center-top{
+    height: 50%;
+    border: 1px solid red;
+}
+
+#footer-content-center-bottom{
+    height: 50%;
+    border: 1px solid red;
+    display: flex;
+    align-items: center;
+}
+.footer-content-center-bottom-side-object{
+    width: 20%;
+    border: 1px solid blue;
+}
+#footer-content-center-bottom-center-object{
+    width: 80%;
+    background-color: gray;
+    height: 4px;
+    border-radius: 5px;
+}
+#footer-content-center-bottom-center-object-white{
+    width: 20%;
+    height: 5px;
+    background-color: white;
+    border-radius: 5px;
+}
 
 #footer-content-right{
     border: 1px solid red;
     height: 100%;
     width: 300px;
+    display: flex;
+    align-items: center
+}
+.footer-content-right-firts-two-elements{
+    width: 15%;
+    border: 1px solid blue;
+}
+#footer-content-right-last-element{
+    width: 70%;
+    border: 1px solid blue;
+}
+#footer-content-right-last-element-gray-line{
+    width: 70%;
+    height: 4px;
+    background-color: gray;
+}
+#footer-content-right-last-element-white-line{
+    width: 25%;
+    height: 5px;
+    background-color: white;
 }
 
 /* UPGRADE-BANNER */
