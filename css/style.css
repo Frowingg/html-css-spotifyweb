@@ -243,7 +243,8 @@ nav ul li{
 }
 .card{
     /* width: 180px; */
-    width: calc(100% / 6 - 20px);
+    /* width: calc(100% / 6 - 20px); */
+    width: calc(100% / 6 - 30px);
     /* height: 80%; */
     margin: 10px 0;
     text-align: center;
@@ -415,7 +416,7 @@ figure img{
         flex-wrap: wrap;
     }
     .card{
-        width: calc(100% / 4 - 20px);
+        width: calc(100% / 4 - 30px);
     }
     #Recently h2{
         margin: 50px 10px;
@@ -424,8 +425,11 @@ figure img{
 }
 
 @media screen and (max-width: 700px) {
-    #side-nav{
-        background-color: green;
+    .card{
+        width: calc(100% / 2 - 30px);
+    }
+    #Recently h2{
+        margin: 70px 10px 20px;
     }
 
 }
