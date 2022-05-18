@@ -76,6 +76,12 @@ main{
     flex-direction: column;
     color: gray;
 }
+#side-nav-s{
+    display: none;
+}
+#side-nav-s-footer{
+    display: none;
+}
 #side-nav a{
     color: gray;
 }
@@ -219,12 +225,7 @@ nav ul li{
     position: absolute;
     top: 60%;
     left: 35%;
-    /* transform: translate(-50%, -50%); */
-    /* top:0;
-    left: 0; */
-    /* border-bottom: 2px solid lime; */
-    /* width: 50px;
-    margin: 0 auto; */
+    margin-top: 3px;
 }
 
 .row{
@@ -436,8 +437,85 @@ figure img{
 
 @media screen and (max-width: 600px) {
     #side-nav{
-        background-color: blue;
+        display: none;
     }
-
+    .content, .upgrade-banner{
+        width: calc(100% - 40px);
+    }
+    #side-nav-s{
+        display: inline-block;
+        width: 40px;
+        height: 100%;
+        background-color: #000;
+        overflow-y: hidden;     
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        color: gray;
+    }
+    #side-nav a{
+        color: gray;
+    }
+    #side-nav #wh{
+        color: white;
+    }
+    #logo{
+        width: 100%;
+        height: 40px;
+        padding: 4px 5px;
+    }
+    #logo img{
+        width: 100%;
+    }
+    .side-nav-s-link-s ul li{
+        width: 100%;
+        color: gray;
+        font-size: 14px;
+        margin: 10px auto;
+    }
+    .side-nav-s-link-s ul li img{
+        width: 80%;
+    }
+    #side-nav-s-footer{
+        display: inline-block;
+        justify-self: end;
+    }
+    #side-nav-s-footer-container{
+        width: 90%;
+        margin: 0 auto;
+    }
+    #side-nav-s-footer-top span{
+        font-size: 12px;
+        vertical-align: middle;
+    }
+    #side-nav-s-footer-top img{
+        width: 15px;
+        margin-right: 5px;
+        vertical-align: middle;
+    }
+    hr{
+        margin: 10px 0;
+    }
+    #side-nav-s-footer-bottom{
+        display: inline-block;
+        margin-bottom: 5px;
+    }
+    #side-nav-s-footer-bottom span{
+        font-size: 14px;
+        vertical-align: middle;
+        color: white;
+    }
+    #side-nav-s-footer-bottom-img{
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        background-color: #808080;
+        display: inline-block;
+        overflow: hidden;
+        vertical-align: middle;
+    }
+    #side-nav-s-footer-bottom-img img{
+        width: 100%;
+    }
+    
 }
-
