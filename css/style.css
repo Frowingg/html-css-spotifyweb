@@ -216,10 +216,6 @@ nav ul li{
     height: 2px;
     background-color: #0f0;
     padding-bottom: 0;
-    /* position: absolute;
-    top: 60%;
-    left: 35%;
-    margin-top: 3px; */
     margin: 0 auto;
     display: block;
 }
@@ -235,7 +231,6 @@ nav ul li{
 }
 
 .card{
-    /* width: calc(100% / 6 - 30px); */
     margin: 10px 0;
     text-align: center;
     margin: 0 10px 15px;
@@ -243,6 +238,7 @@ nav ul li{
 .card-img{
     min-width: 200px;
     width: 100%;
+
     background-image: url(../img/metal_lifting.jpg);
     background-size: cover;
     height: 200px;
@@ -255,6 +251,8 @@ nav ul li{
     top: 50%;
     left: 50%;  
     display: none;
+    height: min-content;
+    position: relative;
 }
 .card-img:hover{
     filter:opacity(35%);
